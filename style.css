@@ -1,0 +1,43 @@
+@font-face {
+    font-family:thousandreasons;
+    src: url(fonts/thousandReasons.ttf);
+}
+
+body {
+    position: absolute;
+    background-image: url("images/fondo.jpg");
+    width: 100%;
+    text-align: center;
+    font-family: thousandReasons;
+    color: white;
+}
+
+.title h1 {
+    margin: 0;
+    padding-top: 30px;
+}
+
+.title h3 {
+    margin: 0;
+    padding-bottom: 10px; 
+}
+
+.game {
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 5px solid white;
+}
+
+.game div {
+    background: transparent;
+    border: 1px solid white;
+    font-size: 90px;
+    line-height: 195px;
+}
+.game div:hover {
+    cursor: pointer;
+}
