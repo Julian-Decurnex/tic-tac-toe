@@ -10,6 +10,8 @@ body {
     text-align: center;
     font-family: thousandReasons;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .title h1 {
@@ -23,6 +25,7 @@ body {
 }
 
 .game {
+    box-sizing: border-box;
     margin: auto;
     width: 600px;
     height: 600px;
@@ -40,4 +43,41 @@ body {
 }
 .game div:hover {
     cursor: pointer;
+}
+
+.game section {
+    margin-top: 240px;
+}
+
+button {
+    font-family: thousandreasons;
+    font-weight: bold;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    height: 40px;
+    width: 120px;
+    box-sizing: border-box;
+}
+button:hover {
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.counter {
+    margin: 30px auto 0;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+
+.playerXWins,
+.playerOWins {
+    border: 1px solid white;
+    margin: 0 20px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    width: 40px;
 }
